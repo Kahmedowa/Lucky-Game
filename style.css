@@ -8,10 +8,10 @@ body{
     background-image:linear-gradient(to right, rgb(222, 222, 222), rgb(91, 91, 91));
     background-repeat: no-repeat;
     background-size: cover;
-   
     width: 100vw;
     height: 100vh;
 }
+
 h1{
     font-size: 4.1rem;
     text-align: center;
@@ -28,11 +28,18 @@ main{
     align-items: center;
     height: 100vh;
 }
+
+div{
+    display: flex;
+    flex-direction: row;
+}
+
 #nummer{
     display: flex;
     font-size: 4rem;
   text-shadow: 2px 3px rgb(233, 168, 168);
 }
+
 button{
     margin: 15px;
     font-size: 2rem;
@@ -55,6 +62,7 @@ p{
 #anim{
     animation: circle 9s linear infinite;
 }
+
 @keyframes circle{
     0%{
         transform: rotate(0deg);
@@ -64,4 +72,20 @@ p{
         transform: rotate(360deg);
         transform: (165);
     }
+}
+
+
+.gewinn {
+    animation: alternate;
+    animation-name: gewinn;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gewinn {
+    0% {color: #ffff11;}
+    25% {color: #cdf00b;}
+    50% {color: #f9b732;}
+    75% {color: #9ff50a;}
+    100% {color: #fdec00;}
 }

@@ -5,7 +5,9 @@
 }
 
 body{
-    background-image: linear-gradient(to right, rgba(248, 120, 141, 0.735), rgba(97, 218, 214, 0.471), rgba(108, 232, 184, 0.882));
+    background-image:linear-gradient(to right, rgb(222, 222, 222), rgb(91, 91, 91));
+    background-repeat: no-repeat;
+    background-size: cover;
    
     width: 100vw;
     height: 100vh;

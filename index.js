@@ -12,6 +12,7 @@ function run(){
         stand -= 1;
     };
 
+  
     document.querySelector("#stand").innerHTML = stand + "€";
 
     if (stand >= 60){

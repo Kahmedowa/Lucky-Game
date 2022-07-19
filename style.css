@@ -26,6 +26,11 @@ main{
     align-items: center;
     height: 100vh;
 }
+#nummer{
+    display: flex;
+    font-size: 4rem;
+  text-shadow: 2px 3px rgb(233, 168, 168);
+}
 button{
     margin: 15px;
     font-size: 2rem;
@@ -45,7 +50,7 @@ p{
     margin: 25px;
 }
 
-i{
+#anim{
     animation: circle 9s linear infinite;
 }
 @keyframes circle{

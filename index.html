@@ -10,14 +10,22 @@
 </head>
 <body>
 
-    <h1><i class="fa-solid fa-clover"></i> Casino Carley <i class="fa-solid fa-clover"></i></h1>
+    <h1><i id="anim" class="fa-solid fa-clover"></i> Casino Carley <i id="anim" class="fa-solid fa-clover"></i></h1>
     
     <main>
         <p id="stand"></p>
-        <button onclick="run()">Wetten! <i class="fa-solid fa-hand-fingers-crossed"></i></button>
+        <button onclick="run()">Wetten!</button>
         <button onclick="reset()">Reset!</button>
-        <p id="nummer"></p>
-    </main>
+        
+        <p id="nummer">
+        <i id="wurffel" class="fa-solid first"></i>
+        <i id="wurffel" class="fa-solid two"></i>
+        <i id="wurffel" class="fa-solid three"></i>
+        <i id="wurffel" class="fa-solid four"></i>
+        <i id="wurffel" class="fa-solid five"></i>
+        <i id="wurffel" class="fa-solid six"></i>
+        </p>
+        </main>
 
 
     <script src="index.js"></script>

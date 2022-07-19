@@ -37,11 +37,6 @@ button{
     border:1px solid rgb(233, 168, 168);
     box-shadow: 2px 2px rgb(233, 168, 168);
 }
-#nummer{
-    border: 2px solid rgb(233, 168, 168);
-    padding: 15px;
-    border-radius: 50%;
-}
 
 p{
     font-size: 2.5rem;
@@ -56,7 +51,7 @@ i{
 @keyframes circle{
     0%{
         transform: rotate(0deg);
-        translate(165px);
+        translate:(165px);
     }
     100%{
         transform: rotate(360deg);

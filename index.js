@@ -3,11 +3,13 @@ let stand = 100;
 document.querySelector("#stand").innerHTML = stand + "€";
 
 function run(){
-    const nummer = Math.round(Math.random() * 4 + 1);
+    const nummer = Math.round(Math.random() * 5 + 1);
+
+
     document.querySelector("#nummer").innerHTML = nummer;
 
-    if (nummer == 5){
-        stand += 4;
+    if (nummer == 6){
+        stand += 5;
     } else {
         stand -= 1;
     };

@@ -3,22 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    background-image:linear-gradient(to right, rgb(222, 222, 222), rgb(91, 91, 91));
+    background-image: url(casino.jpg/pexels-paul-volkmer-3628344.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    background-position: center;
 }
 
+
 h1{
+    background-image: linear-gradient(to right, rgb(216, 175, 175), rgba(240, 85, 85, 0.857), rgb(142, 118, 118));
     font-size: 4.1rem;
     text-align: center;
-    margin-top: 50px;
-    color: rgb(34, 34, 76);
+   height: 100px;
+   padding-top: 10px;
+    color: rgb(161, 6, 65);
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 3px rgb(233, 168, 168);
+    text-shadow: 2px 3px rgb(8, 7, 7);
 }
 
 main{
@@ -27,17 +28,22 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
+}
+div{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.241);
+    border-radius: 10px;
 }
 
-div{
-    display: flex;
-    flex-direction: row;
-}
 
 #nummer{
     display: flex;
     font-size: 4rem;
-  text-shadow: 2px 3px rgb(233, 168, 168);
+    color: #f6c53e;
 }
 
 button{
@@ -46,20 +52,22 @@ button{
     width: 150px;
     height: 60px;
     border-radius: 7px 2px 7px 2px;
-    background-color: rgb(29, 34, 87);
-    color: rgb(233, 168, 168);
-    border:1px solid rgb(233, 168, 168);
-    box-shadow: 2px 2px rgb(233, 168, 168);
+    background-color: rgb(255, 252, 253);
+    color:#0b0906;
+    border:1px solid #f6c53e;
+    box-shadow: 2px 2px rgb(161, 6, 65);
+    cursor: pointer;
 }
 
 p{
     font-size: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(29, 34, 87);
+    color: #f6c53e;
     margin: 25px;
 }
 
 #anim{
+    color: #f6c53e;
     animation: circle 9s linear infinite;
 }
 
@@ -76,16 +84,48 @@ p{
 
 
 .gewinn {
-    animation: alternate;
+    animation: gewinn ;
     animation-name: gewinn;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-iteration-count: 3;
 }
 
 @keyframes gewinn {
-    0% {color: #ffff11;}
-    25% {color: #cdf00b;}
-    50% {color: #f9b732;}
-    75% {color: #9ff50a;}
-    100% {color: #fdec00;}
+    0% {
+     
+        color: rgb(161, 6, 65);
+    }
+    50% {
+        transform: rotate(360deg);
+        color: rgba(151, 251, 52, 0.742);
+    }
+    100% {
+        transform: rotate(360deg);
+        color: rgb(161, 6, 65);
+    }
 }
+
+.gruen {
+    animation-name: gruen;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes gruen {
+    0% { color:#7bf932;}
+    50%{color:#9ff50abd;}
+    100%{color:#3fb019c1;}
+}
+
+.reed {
+    animation-name: reed;
+    animation-duration: 2s;
+    animation-iteration-count: repeat;
+}
+
+@keyframes reed {
+    0% { color:#f6c53e;}
+    50%{color:#da2f04;}
+    100%{color:#a69b36;}
+}
+

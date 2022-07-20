@@ -15,7 +15,7 @@ h1{
     background-image: linear-gradient(to right, rgb(216, 175, 175), rgba(240, 85, 85, 0.857), rgb(142, 118, 118));
     font-size: 4.1rem;
     text-align: center;
-   height: 100px;
+   line-height: 100px;
    padding-top: 10px;
     color: rgb(161, 6, 65);
     font-family: Arial, Helvetica, sans-serif;
